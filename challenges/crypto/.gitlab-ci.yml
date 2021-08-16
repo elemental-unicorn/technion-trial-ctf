@@ -1,0 +1,14 @@
+---
+include:
+  - local: "/.gitlab/ci/base.yml"
+  - local: "/.gitlab/ci/rules.yml"
+  - local: "/.gitlab/ci/trigger.yml"
+
+test:crypto/relatively_secure_algorithm:
+  image: ${CI_REGISTRY_IMAGE}/python-env
+  stage: test
+  extends:
+    - .base_job
+    - .cd_here
+  script:
+    - python3 solve.py 

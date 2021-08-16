@@ -1,0 +1,13 @@
+# My Favorite Color
+
+# How TO
+
+1. Open pain or gimp
+2. Select bucket tool with threshold of 1%
+3. Select color black
+4. Use bucket tool on top right of image
+
+You should see the flag now. It was one pixel difference from the background
+
+## Flag
+`flag{transparent_is_the_new_black}`
